@@ -5,9 +5,7 @@ object PythagoreanTriplet:
          b <- 1 to 400
          if a < b
          c <- 1 to 500
-         if b < c
-         if isPythagorean(a, b, c)
-         if a + b + c <= 1000
+         if b < c && isPythagorean(a, b, c) && a + b + c <= 1000
       yield (a, b, c)
 
    def isPythagorean(t: (Int, Int, Int)): Boolean =
